@@ -76,7 +76,7 @@ const TransformationForm = ({
 
 
 
-  
+
   // 2. Define a submit handler.
   function onSubmit(values: z.infer<typeof formSchema>) {
     console.log(values);
@@ -208,9 +208,14 @@ const TransformationForm = ({
               )}
             />
             {type === "recolor" && (
+
               <CustomField
                 control={form.control}
-                name="color"
+                // name="color"
+
+              name="title"
+
+
                 formLabel="Replacement Color"
                 className="w-full"
                 render={({ field }) => (
